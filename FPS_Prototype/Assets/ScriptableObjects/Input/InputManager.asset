@@ -10,5 +10,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4514c9601af4d0b498d3aefc4d41dee8, type: 3}
-  m_Name: InputActionReader
+  m_Name: InputManager
   m_EditorClassIdentifier: 
