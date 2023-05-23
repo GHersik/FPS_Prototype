@@ -31,8 +31,6 @@ public class PlayerMovementController : MonoBehaviour
         PlayerFall();
     }
 
-
-
     private void PlayerMove()
     {
         Vector3 move = this.transform.right * movementDirection.x + transform.forward * movementDirection.z;

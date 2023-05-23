@@ -9,8 +9,9 @@ public class PlayerMouseController : MonoBehaviour
 
 
     [Header("References")]
-    [SerializeField] Camera playerCamera;
     [SerializeField] InputManager inputManager;
+    [SerializeField] Camera playerCamera;
+
 
     private Vector2 pointDirection = Vector2.zero;
     private float rotation = 0f;
