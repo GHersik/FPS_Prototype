@@ -49,6 +49,12 @@ public class PlayerMovementController : MonoBehaviour
 
     private void UpdateMovementDirection(Vector2 arguments) => movementDirection = new Vector3(arguments.x, 0, arguments.y);
 
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+    }
+
     private void OnEnable()
     {
         inputManager.MoveEvent += UpdateMovementDirection;

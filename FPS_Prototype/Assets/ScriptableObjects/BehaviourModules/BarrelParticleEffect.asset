@@ -9,7 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88bf2fec7ba98734c969391d64107a81, type: 3}
-  m_Name: CrateDestroy
+  m_Script: {fileID: 11500000, guid: 40a9711300dcce64fba2805fe65310c0, type: 3}
+  m_Name: BarrelParticleEffect
   m_EditorClassIdentifier: 
-  particleSystem: {fileID: 6407998114799271809, guid: 3f8c3eb417ca10248b87f2047ba9b21f, type: 3}
+  particlePrefab: {fileID: 1650233261671257627, guid: 3f54c01687c065949886b38b0983ca9d, type: 3}
+  offsetPoint: {x: 0, y: 1, z: 0}
+  timeToDestroy: 2

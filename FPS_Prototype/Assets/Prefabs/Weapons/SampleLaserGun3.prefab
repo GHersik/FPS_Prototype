@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8e3f8a8347b3b28438c89f57b6f528e9, type: 2}
+  - {fileID: 2100000, guid: 210d9d0e5b6f020418eb8344598d648f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -222,7 +222,7 @@ GameObject:
   - component: {fileID: 3060544226863217061}
   - component: {fileID: 3060544226863217060}
   m_Layer: 0
-  m_Name: SampleLaserGun
+  m_Name: SampleLaserGun3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -262,7 +262,7 @@ MonoBehaviour:
   range: 100
   impactForce: 50
   fireRate: 15
-  damageType: 0
+  damageType: 2
   inputManager: {fileID: 11400000, guid: d3335cf6f81923c458639f296c24f92d, type: 2}
   muzzleFlash: {fileID: 3060544227696397392}
   hitEffect: {fileID: 6531371502800893072, guid: aeb369b737cbd86469d759bbca8f0a77, type: 3}
@@ -293,7 +293,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8791840962766474291, guid: d1158ca39c2b1da48b9a3b75f3221eea, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.15799999
+      value: 0.1716
       objectReference: {fileID: 0}
     - target: {fileID: 8791840962766474291, guid: d1158ca39c2b1da48b9a3b75f3221eea, type: 3}
       propertyPath: m_LocalRotation.w

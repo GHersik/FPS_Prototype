@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40a9711300dcce64fba2805fe65310c0, type: 3}
+  m_Name: CrateParticleEffect
+  m_EditorClassIdentifier: 
+  particlePrefab: {fileID: 1650233261671257627, guid: 3f8c3eb417ca10248b87f2047ba9b21f, type: 3}
+  offsetPoint: {x: 0, y: 1, z: 0}
+  timeToDestroy: 1
