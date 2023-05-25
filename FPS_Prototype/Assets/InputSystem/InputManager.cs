@@ -10,7 +10,8 @@ public class InputManager : ScriptableObject, InputActions.IPlayerActions
     public event UnityAction<Vector2> MoveEvent = delegate { };
     public event UnityAction FireEvent = delegate { };
     public event UnityAction JumpEvent = delegate { };
-
+    public event UnityAction<Vector2> SwitchWeaponEvent = delegate { };
+    public event UnityAction<bool> AimWeaponEvent = delegate { };
 
     private InputActions inputActions;
 
@@ -28,6 +29,21 @@ public class InputManager : ScriptableObject, InputActions.IPlayerActions
         if (context.phase == InputActionPhase.Performed)
             JumpEvent?.Invoke();
     }
+
+    public void OnSwitchWeapon(InputAction.CallbackContext context)
+    {
+        if (context.phase == InputActionPhase.Performed)
+            SwitchWeaponEvent?.Invoke(context.ReadValue<Vector2>());
+    }
+
+    public void OnAimWeapon(InputAction.CallbackContext context)
+    {
+        if (context.phase == InputActionPhase.Performed)
+            AimWeaponEvent?.Invoke(true);
+        if (context.phase == InputActionPhase.Canceled)
+            AimWeaponEvent?.Invoke(false);
+    }
+
 
     public void EnableAllInput()
     {
@@ -53,4 +69,6 @@ public class InputManager : ScriptableObject, InputActions.IPlayerActions
     }
 
     private void OnDisable() => DisableAllInput();
+
+
 }
