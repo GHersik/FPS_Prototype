@@ -1,40 +1,27 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Target : MonoBehaviour
+
+public class Target : MonoBehaviour, IDamageable
 {
-    //public delegate Particle[] ParticleDelegate();
     [Header("Options")]
     [SerializeField] float durability = 100f;
     [SerializeField] MaterialType materialType;
 
     [Header("Behaviour Modules")]
-    [SerializeField] List<Module> moduleList = new List<Module>();
+    [SerializeField] List<BehaviourModule> moduleList = new List<BehaviourModule>();
 
     public void TakeDamage(float amount, MaterialType materialType)
     {
         if (materialType != this.materialType) return;
 
         durability -= amount;
-        if (durability < 0) Destroy(gameObject);
+        if (durability < 0) OnDestructionBehave();
     }
 
-    private void OnDestroy()
+    private void OnDestructionBehave()
     {
         foreach (var module in moduleList)
-        {
-            module.Behave();
-        }
-    }
-
-    private void OnEnable()
-    {
-
-    }
-
-    private void OnDisable()
-    {
-
+            module.Behave(gameObject);
     }
 }

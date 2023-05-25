@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 5554854147826594657}
   - component: {fileID: 5554854147826594658}
   - component: {fileID: 5554854147826594659}
+  - component: {fileID: 2944410451049940802}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -57,7 +58,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5554854147826594684}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5, y: 2.25, z: -7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -121,6 +122,34 @@ MonoBehaviour:
     m_Bits: 256
   inputManager: {fileID: 11400000, guid: d3335cf6f81923c458639f296c24f92d, type: 2}
   groundCheck: {fileID: 5554854149285336049}
+--- !u!114 &2944410451049940802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5554854147826594684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c8f3043a314694c9ea3bf8c617bf4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingWeapons:
+  - {fileID: 3060544226863217060, guid: 7091cf82909c97e40aad3c06a304f17c, type: 3}
+  - {fileID: 3060544226863217060, guid: 76f44cfeca5954b418449e5d2fecf1af, type: 3}
+  - {fileID: 3060544226863217060, guid: 7091cf82909c97e40aad3c06a304f17c, type: 3}
+  defaultFieldOfView: 60
+  aimFieldOfView: 35
+  aimSpeedTransition: 8
+  switchSpeedTransition: 3
+  holsterCapacity: 3
+  switchDelay: 0.1
+  inputManager: {fileID: 11400000, guid: d3335cf6f81923c458639f296c24f92d, type: 2}
+  weaponCamera: {fileID: 5554854149041965955}
+  weaponUpPosition: {fileID: 5554854149204616013}
+  weaponDownPosition: {fileID: 5554854147911578034}
+  weaponFocusPosition: {fileID: 5554854147592864542}
+  weaponContainer: {fileID: 5554854149190633175}
 --- !u!1 &5554854147911578033
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,7 +358,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5554854149190633175}
-  - component: {fileID: 5554854149190633176}
   m_Layer: 0
   m_Name: Holster
   m_TagString: Untagged
@@ -355,34 +383,6 @@ Transform:
   m_Father: {fileID: 5554854149041965956}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5554854149190633176
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5554854149190633174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16c8f3043a314694c9ea3bf8c617bf4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingWeapons:
-  - {fileID: 3060544226863217060, guid: 7091cf82909c97e40aad3c06a304f17c, type: 3}
-  - {fileID: 3060544226863217060, guid: 76f44cfeca5954b418449e5d2fecf1af, type: 3}
-  - {fileID: 3060544226863217060, guid: 7091cf82909c97e40aad3c06a304f17c, type: 3}
-  defaultFieldOfView: 60
-  aimFieldOfView: 35
-  aimSpeedTransition: 8
-  switchSpeedTransition: 3
-  holsterCapacity: 3
-  switchDelay: 0.1
-  inputManager: {fileID: 11400000, guid: d3335cf6f81923c458639f296c24f92d, type: 2}
-  weaponCamera: {fileID: 5554854149041965955}
-  weaponUpPosition: {fileID: 5554854149204616013}
-  weaponDownPosition: {fileID: 5554854147911578034}
-  weaponFocusPosition: {fileID: 5554854147592864542}
-  weaponContainer: {fileID: 5554854149190633175}
 --- !u!1 &5554854149204616012
 GameObject:
   m_ObjectHideFlags: 0
